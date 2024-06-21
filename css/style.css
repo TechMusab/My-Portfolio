@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* box sizing border-box means the width and height of element
+    includes the padding & border: ; */
+    -webkit-font-smoothing: antialiased;
+}
+:root{
+    --primary:#3dcfd3;
+    --secondary:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background: var(--secondary);
+    height: 800px;
+}
+ /* not given height to navbar so it is auto taking height */
+nav{
+    width:1152px;
+    padding: 2rem 0px;
+    /* margin: auto will work if we give width and it horzinatlly aligns the element 
+    within the conatiner; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .left .tabs a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+header .left .tabs a:hover{
+    color: var(--primary);
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.right button{
+    padding: 12px 30px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease;
+}
+.right button:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
