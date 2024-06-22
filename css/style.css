@@ -165,5 +165,168 @@ header .left .tabs a:hover{
     height: 100%;
     padding: 0.5rem;
 }
+.container-services{
+    background: var(--light);
+padding-top: 2rem;
+padding-bottom: 3rem;
+}
+.services-heading{
+    color: var(--secondary);
+    text-align: center;
+}
+.services-heading span{
+    color: var(--primary);
+}
+.services-para{
+    color: var(--ternary);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.services-cards .card img{
+    width: 70px;
+    background: var(--primary);
+    padding: 0.5rem;
+    box-sizing: content-box;
+}
+.card{
+    background: var(--pure);
+    width:300px;
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+}
+/* if i define width i can adjust with margin auto to center the element
+but i dont define width of grid then justify-items will work to center horizontally
+grid items will auto adjust the gap b/w to fulfill the colum & row requirements defined */
+.services-cards{
+    margin: auto;
+   padding-top: 1rem;
+    width: 800px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap:2rem;
+    grid-row-gap:4rem ;
+}
+.card h2{
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+.card img{
+    position: absolute;
+    top:-2rem;
+    left:40%;
+}
+.card p{
+    color: var(--ternary);
+    line-height: 1.7;
+}
+.card:hover{
+    background: var(--secondary);
+    transition: all 0.3s ease;
 
+}
+.card:hover h2{
+    color: var(--pure);
+}
+.card:hover p{
+    color: var(--pure);
+}
+.section-freelancer{
+    height: 350px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%,0 100%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    color: var(--pure);
+}
+.section-freelancer h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+}
+ /* agar within container dosri content se space deni to margin agar osi container se deni h to phr padding use kare */
+ .section-freelancer p{
+    margin-bottom: 2rem;
+ }
+.section-freelancer button{
+    padding: 12px 30px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease;
+}
+.reviews-upper{
+    margin-top: 5rem;
+}
+.reviews-upper h1{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.reviews-upper h1 span{
+    color: var(--primary);
+}
+.reviews-upper p{
+    color: var(--ternary);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.reviews-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.reviews-container .review {
+    margin: 0 auto; /* Center the review cards */
+    width: 56%;
+    padding: 1rem;
+    text-align: center;
+    display: none; /* Initially hide all reviews */
+}
+
+.reviews-container .review img {
+    display: block;
+    margin: 0 auto; /* Center the image within the review */
+    margin-bottom: 2rem;
+}
+.reviews-container .review .review-text{
+margin-bottom: 2rem;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
