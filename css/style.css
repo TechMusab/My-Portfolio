@@ -1,332 +1,378 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /* box sizing border-box means the width and height of element
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* box sizing border-box means the width and height of element
     includes the padding & border: ; */
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
-:root{
-    --primary:#3dcfd3;
-    --secondary:#161616;
-    --pure:#ffffff;
-    --ternary:#898989;
-    --light:#f2f2f2;
-
+:root {
+  --primary: #3dcfd3;
+  --secondary: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
 }
-body{
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
-header{
-    background: var(--secondary);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 89%,0 100%);
+header {
+  background: var(--secondary);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 89%, 0 100%);
 }
- /* not given height to navbar so it is auto taking height */
-nav{
-    width:1152px;
-    padding: 2rem 0px;
-    /* margin: auto will work if we give width and it horzinatlly aligns the element 
+/* not given height to navbar so it is auto taking height */
+nav {
+  width: 1152px;
+  padding: 2rem 0px;
+  /* margin: auto will work if we give width and it horzinatlly aligns the element 
     within the conatiner; */
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header .left .tabs a{
-    color:var(--pure);
-    text-decoration: none;
-    margin-right: 2rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+header .left .tabs a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
-header .left .tabs a:hover{
-    color: var(--primary);
+header .left .tabs a:hover {
+  color: var(--primary);
 }
-.left{
-    display: flex;
-    align-items: center;
-    gap: 13px;
+.left {
+  display: flex;
+  align-items: center;
+  gap: 13px;
 }
-.right button{
-    padding: 12px 30px;
-    background-color: var(--primary);
-    color: var(--secondary);
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease;
+.right button {
+  padding: 12px 30px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease;
 }
-.right button:hover{
-    background: transparent;
-    border-color: var(--primary);
-    color: var(--primary);
+.right button:hover {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
 }
-.main{
-    padding: 3rem 0;
-    display: flex;
-    width: 1152px;
-    margin: 0 auto;
-    gap: 7rem;
-    align-items: center;
+.main {
+  padding: 3rem 0;
+  display: flex;
+  width: 1152px;
+  margin: 0 auto;
+  gap: 7rem;
+  align-items: center;
 }
-.main .div-left img{
-    width: 330px;
-
+.main .div-left img {
+  width: 330px;
 }
 .main .div-right {
-    color: var(--pure);
-    margin-top: -5rem;
+  color: var(--pure);
+  margin-top: -5rem;
 }
-.main .div-right h5{
-    font-size: 25px;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
-
+.main .div-right h5 {
+  font-size: 25px;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
-.main .div-right h1{
-    font-size: 3rem;
-    font-weight: 200;
-    width: 525px;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+.main .div-right h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  width: 525px;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
-.main .div-right h1 span{
-    color: var(--primary);
+.main .div-right h1 span {
+  color: var(--primary);
 }
-.main .div-right p{
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+.main .div-right p {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
-.main .div-right .div-btn .btn{
-    padding: 12px 30px;
-    background: transparent;
-    color: var(--primary);
-    border-color: var(--primary);
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease;
+.main .div-right .div-btn .btn {
+  padding: 12px 30px;
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease;
 }
-.main .div-right .div-btn .btn:hover{
-    background: var(--primary);
-    color: var(--secondary);
+.main .div-right .div-btn .btn:hover {
+  background: var(--primary);
+  color: var(--secondary);
 }
-.container{
+.container {
   margin: 5rem 0;
   display: flex;
   align-items: center;
   margin-left: 200px;
   gap: 7rem;
 }
-.container .about-image img{
-    width: 400px;
-    height: 400px;
-    object-fit: contain;
+.container .about-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
 }
-.about-right{
-    width: 400px;
+.about-right {
+  width: 400px;
 }
-.about-right h1{
-    font-size: 1.7rem;
-    font-weight: 500;
-    margin-bottom: 10px;
+.about-right h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
-.about-right h1 span{
-    color: var(--primary);
+.about-right h1 span {
+  color: var(--primary);
 }
-.about-right h3{
-    font-size: 1rem;
-    margin-bottom: 10px;
-    font-weight: 400;
+.about-right h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
-.about-right p{
-    color: var(--ternary);
-    line-height: 1.9;
+.about-right p {
+  color: var(--ternary);
+  line-height: 1.9;
 }
-.about-right .social-icons{
-    display: flex;
-    gap: 20px;
-    margin-top: 1rem;
-
+.about-right .social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 1rem;
 }
-.about-right .social-icons a{
-    background: var(--light);
-    border-radius: 50%;
-    text-align: center;
-    transition: all 0.3s ease;
+.about-right .social-icons a {
+  background: var(--light);
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s ease;
 }
-.about-right .social-icons a:hover{
-    background: var(--primary);
+.about-right .social-icons a:hover {
+  background: var(--primary);
 }
-.about-right .social-icons a img{
-    width:37px;
-    height: 100%;
-    padding: 0.5rem;
+.about-right .social-icons a img {
+  width: 37px;
+  height: 100%;
+  padding: 0.5rem;
 }
-.container-services{
-    background: var(--light);
-padding-top: 2rem;
-padding-bottom: 3rem;
+.container-services {
+  background: var(--light);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
-.services-heading{
-    color: var(--secondary);
-    text-align: center;
+.services-heading {
+  color: var(--secondary);
+  text-align: center;
 }
-.services-heading span{
-    color: var(--primary);
+.services-heading span {
+  color: var(--primary);
 }
-.services-para{
-    color: var(--ternary);
-    margin-bottom: 5rem;
-    text-align: center;
+.services-para {
+  color: var(--ternary);
+  margin-bottom: 5rem;
+  text-align: center;
 }
-.services-cards .card img{
-    width: 70px;
-    background: var(--primary);
-    padding: 0.5rem;
-    box-sizing: content-box;
+.services-cards .card img {
+  width: 70px;
+  background: var(--primary);
+  padding: 0.5rem;
+  box-sizing: content-box;
 }
-.card{
-    background: var(--pure);
-    width:300px;
-    padding: 3rem 2rem;
-    position: relative;
-    text-align: center;
+.card {
+  background: var(--pure);
+  width: 300px;
+  padding: 3rem 2rem;
+  position: relative;
+  text-align: center;
 }
 /* if i define width i can adjust with margin auto to center the element
 but i dont define width of grid then justify-items will work to center horizontally
 grid items will auto adjust the gap b/w to fulfill the colum & row requirements defined */
-.services-cards{
-    margin: auto;
-   padding-top: 1rem;
-    width: 800px;
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-column-gap:2rem;
-    grid-row-gap:4rem ;
+.services-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 800px;
+  margin-left: 17rem;
+  grid-row-gap: 5rem;
 }
-.card h2{
-    margin-top: 1.5rem;
-    font-weight: 400;
+.card h2 {
+  margin-top: 1.5rem;
+  font-weight: 400;
 }
-.card img{
-    position: absolute;
-    top:-2rem;
-    left:40%;
+.card img {
+  position: absolute;
+  top: -2rem;
+  left: 40%;
 }
-.card p{
-    color: var(--ternary);
-    line-height: 1.7;
+.card p {
+  color: var(--ternary);
+  line-height: 1.7;
 }
-.card:hover{
-    background: var(--secondary);
-    transition: all 0.3s ease;
-
+.card:hover {
+  background: var(--secondary);
+  transition: all 0.3s ease;
 }
-.card:hover h2{
-    color: var(--pure);
+.card:hover h2 {
+  color: var(--pure);
 }
-.card:hover p{
-    color: var(--pure);
+.card:hover p {
+  color: var(--pure);
 }
-.section-freelancer{
-    height: 350px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%,0 100%);
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
-    color: var(--pure);
+.section-freelancer {
+  height: 350px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/camera.png);
+  color: var(--pure);
 }
-.section-freelancer h1{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    padding-top: 3rem;
+.section-freelancer h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
 }
- /* agar within container dosri content se space deni to margin agar osi container se deni h to phr padding use kare */
- .section-freelancer p{
-    margin-bottom: 2rem;
- }
-.section-freelancer button{
-    padding: 12px 30px;
-    background-color: var(--primary);
-    color: var(--secondary);
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease;
+/* agar within container dosri content se space deni to margin agar osi container se deni h to phr padding use kare */
+.section-freelancer p {
+  margin-bottom: 2rem;
 }
-.reviews-upper{
-    margin-top: 5rem;
+.section-freelancer button {
+  padding: 12px 30px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease;
 }
-.reviews-upper h1{
-    color: var(--secondary);
-    text-align: center;
-    margin-bottom: 1rem;
+.reviews-upper {
+  margin-top: 3rem;
+  padding-top: 2rem;
 }
-.reviews-upper h1 span{
-    color: var(--primary);
+.reviews-upper h1 {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
 }
-.reviews-upper p{
-    color: var(--ternary);
-    margin-bottom: 5rem;
-    text-align: center;
+.reviews-upper h1 span {
+  color: var(--primary);
+}
+.reviews-upper p {
+  color: var(--ternary);
+  margin-bottom: 5rem;
+  text-align: center;
 }
 .reviews-container {
-    position: relative;
-    width: 80%;
-    margin: 0 auto; /* Center the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
+  position: relative;
+  width: 80%;
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .reviews-container .review {
-    margin: 0 auto; /* Center the review cards */
-    width: 56%;
-    padding: 1rem;
-    text-align: center;
-    display: none; /* Initially hide all reviews */
+  margin: 0 auto; /* Center the review cards */
+  width: 56%;
+  padding: 1rem;
+  text-align: center;
+  display: none; /* Initially hide all reviews */
 }
 
 .reviews-container .review img {
-    display: block;
-    margin: 0 auto; /* Center the image within the review */
-    margin-bottom: 2rem;
+  display: block;
+  margin: 0 auto; /* Center the image within the review */
+  margin-bottom: 2rem;
 }
-.reviews-container .review .review-text{
-margin-bottom: 2rem;
+.reviews-container .review .review-text {
+  margin-bottom: 2rem;
+}
+
+.number-container {
+  position: absolute;
+  top: -2rem; /* Adjust as needed */
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-
 .active {
-    background-color: #717171;
+  background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
+.our-work {
+  background: var(--light);
+}
+.work-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 800px;
+  margin-left: 12rem;
+  position: relative;
+}
+.image-card{
+    position: relative;
+ 
+}
+.image-card .overlay {
+    background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.image-card:hover .overlay {
+    opacity: 0.9;
+    
+}
+
+.image-card .overlay a{
+    color: var(--pure);
+    text-decoration: none;
+}
+
